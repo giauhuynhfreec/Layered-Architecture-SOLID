@@ -36,6 +36,9 @@
 		3C0E64E52EAE3EF700512E52 /* ArticleRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0E64E42EAE3EF100512E52 /* ArticleRepositoryImpl.swift */; };
 		3C0E64E82EAE3F8E00512E52 /* ArticleRemoteDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0E64E72EAE3F8B00512E52 /* ArticleRemoteDataSourceImpl.swift */; };
 		3C0E64EA2EAE3FB400512E52 /* ArticleLocalDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0E64E92EAE3FAB00512E52 /* ArticleLocalDataSourceImpl.swift */; };
+		3CE950792EAFBEF700E3692C /* GetArticlesUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE950782EAFBEF700E3692C /* GetArticlesUseCaseTests.swift */; };
+		3CE9507B2EAFBF0C00E3692C /* MappingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE9507A2EAFBF0C00E3692C /* MappingTests.swift */; };
+		3CE9507D2EAFBF1900E3692C /* OfflineFallbackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE9507C2EAFBF1900E3692C /* OfflineFallbackTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +92,9 @@
 		3C64CB2C2EAE3305007522C4 /* Layered Architecture + SOLID.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Layered Architecture + SOLID.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C64CB422EAE3306007522C4 /* Layered Architecture + SOLIDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Layered Architecture + SOLIDTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C64CB4C2EAE3306007522C4 /* Layered Architecture + SOLIDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Layered Architecture + SOLIDUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CE950782EAFBEF700E3692C /* GetArticlesUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetArticlesUseCaseTests.swift; sourceTree = "<group>"; };
+		3CE9507A2EAFBF0C00E3692C /* MappingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MappingTests.swift; sourceTree = "<group>"; };
+		3CE9507C2EAFBF1900E3692C /* OfflineFallbackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineFallbackTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +187,9 @@
 			isa = PBXGroup;
 			children = (
 				3C0E64B02EAE3A4300512E52 /* Layered_Architecture___SOLIDTests.swift */,
+				3CE950782EAFBEF700E3692C /* GetArticlesUseCaseTests.swift */,
+				3CE9507A2EAFBF0C00E3692C /* MappingTests.swift */,
+				3CE9507C2EAFBF1900E3692C /* OfflineFallbackTests.swift */,
 			);
 			path = "Layered Architecture + SOLIDTests";
 			sourceTree = "<group>";
@@ -492,6 +501,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C0E64B22EAE3A4300512E52 /* Layered_Architecture___SOLIDTests.swift in Sources */,
+				3CE9507B2EAFBF0C00E3692C /* MappingTests.swift in Sources */,
+				3CE950792EAFBEF700E3692C /* GetArticlesUseCaseTests.swift in Sources */,
+				3CE9507D2EAFBF1900E3692C /* OfflineFallbackTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
