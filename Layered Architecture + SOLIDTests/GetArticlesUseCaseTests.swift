@@ -1,7 +1,6 @@
 // Tests/GetArticlesUseCaseTests.swift
 import XCTest
-import Domain
-@testable import Application
+@testable import Layered_Architecture___SOLID
 
 final class MockRepo: ArticleRepository {
     var articles: [Article] = []

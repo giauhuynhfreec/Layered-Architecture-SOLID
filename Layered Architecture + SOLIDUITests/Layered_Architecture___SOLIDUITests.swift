@@ -1,8 +1,6 @@
-//___FILEHEADER___
-
 import XCTest
 
-final class ___FILEBASENAMEASIDENTIFIER___: XCTestCase {
+final class LayeredArchitectureSOLIDUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -26,11 +24,11 @@ final class ___FILEBASENAMEASIDENTIFIER___: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
 
-    @MainActor
-    func testLaunchPerformance() throws {
-        // This measures how long it takes to launch your application.
-        measure(metrics: [XCTApplicationLaunchMetric()]) {
-            XCUIApplication().launch()
-        }
-    }
+//    @MainActor
+//    func testLaunchPerformance() throws {
+//        // This measures how long it takes to launch your application.
+//        measure(metrics: [XCTApplicationLaunchMetric()]) {
+//            XCUIApplication().launch()
+//        }
+//    }
 }

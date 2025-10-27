@@ -1,7 +1,6 @@
 // Tests/MappingTests.swift
 import XCTest
-import Domain
-@testable import Data
+@testable import Layered_Architecture___SOLID
 
 final class MappingTests: XCTestCase {
     func test_dto_to_entity_and_back() {

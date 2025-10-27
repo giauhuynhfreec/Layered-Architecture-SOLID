@@ -1,8 +1,6 @@
 // Tests/OfflineFallbackTests.swift
 import XCTest
-import Domain
-@testable import Data
-@testable import Infrastructure
+@testable import Layered_Architecture___SOLID
 
 final class FailingHTTP: HTTPClient {
     func getJSON(filename: String) async throws -> Data { throw HTTPClientError.notFound }
