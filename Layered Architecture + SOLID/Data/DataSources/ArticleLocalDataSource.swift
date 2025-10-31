@@ -6,4 +6,5 @@ protocol ArticleLocalDataSource {
     func writeArticles(_ list: [ArticleDTO]) async throws
     func readArticle(id: String) async throws -> ArticleDTO?
     func writeArticle(_ item: ArticleDTO) async throws
+    func deleteArticle(id: String) async throws
 }

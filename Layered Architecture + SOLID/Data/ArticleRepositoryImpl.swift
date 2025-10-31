@@ -44,4 +44,23 @@ public final class ArticleRepositoryImpl: ArticleRepository {
         try? await local.writeArticle(dto)
         return dto.toEntity()
     }
+
+    public func createArticle(_ article: Article) async throws -> Article {
+        let dto = article.toDTO()
+        let created = try await remote.createArticle(dto)
+        try? await local.writeArticle(created)
+        return created.toEntity()
+    }
+
+    public func updateArticle(_ article: Article) async throws -> Article {
+        let dto = article.toDTO()
+        let updated = try await remote.updateArticle(dto)
+        try? await local.writeArticle(updated)
+        return updated.toEntity()
+    }
+
+    public func deleteArticle(id: String) async throws {
+        try await remote.deleteArticle(id: id)
+        try? await local.deleteArticle(id: id)
+    }
 }

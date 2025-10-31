@@ -37,4 +37,10 @@ final class ArticleLocalDataSourceImpl: ArticleLocalDataSource {
         }
         try await writeArticles(list)
     }
+
+    func deleteArticle(id: String) async throws {
+        var list = try await readArticles()
+        list.removeAll { $0.id == id }
+        try await writeArticles(list)
+    }
 }

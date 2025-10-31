@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import FirebaseCore
+
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -14,10 +16,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        if FirebaseApp.app() == nil {
+            FirebaseApp.configure()
+        }
 #if DEBUG
-        container = AppContainer(simulateNetworkFailure: false) // đổi true để test offline
+        container = AppContainer(simulateNetworkFailure: false, useFirebase: true) // đổi simulateNetworkFailure để test offline
 #else
-        container = AppContainer(simulateNetworkFailure: false)
+        container = AppContainer(simulateNetworkFailure: false, useFirebase: true)
 #endif
         
         let win = UIWindow(frame: UIScreen.main.bounds)
